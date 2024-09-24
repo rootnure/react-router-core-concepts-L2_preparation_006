@@ -5,21 +5,26 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello from react router</div>,
-    errorElement: <div>Oops... Sorry...</div>
+    element: <Home></Home>,
+    errorElement: <div>Oops... Sorry...</div>,
+    children: [
+      {
+        path: "/about",
+        element: <About></About>
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>
+      }
+    ]
   },
-  {
-    path: '/about',
-    element: <div>I am in the about page</div>
-  },
-  {
-    path: '/contact',
-    element: <div>Contact me now</div>
-  }
 ]);
 
 createRoot(document.getElementById('root')).render(
