@@ -1,0 +1,22 @@
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.post {
+    padding: 10px;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.post button {
+    color: white;
+    background-color: lightseagreen;
+    padding: 5px 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}

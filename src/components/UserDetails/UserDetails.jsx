@@ -6,10 +6,10 @@ const UserDetails = () => {
     const { id, name, phone, username, website } = userDetails;
 
     const userDetailsStyles = {
-        border: '2px slid brown',
+        border: '2px solid brown',
         backgroundColor: 'lightgray',
         padding: '1px 20px',
-        borderRadius: '5px'
+        borderRadius: '15px'
     }
 
     return (
