@@ -1,13 +1,19 @@
-
+import { Link } from "react-router-dom";
 
 const Header = () => {
+    const navItemsStyle = {
+        display: 'flex',
+        gap: '15px'
+    }
+
     return (
         <div>
             <h2>Navbar</h2>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact Us</a>
+            <nav style={navItemsStyle}>
+                <Link to="/">Home</Link>
+                <Link to="/users">Users</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact Us</Link>
             </nav>
         </div>
     );
