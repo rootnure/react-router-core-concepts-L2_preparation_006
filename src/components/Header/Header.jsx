@@ -7,7 +7,7 @@ const Header = () => {
     }
 
     return (
-        <div>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <h2>Navbar</h2>
             <nav style={navItemsStyle}>
                 <Link to="/">Home</Link>

@@ -14,7 +14,7 @@ const Users = () => {
      * 4. set data to state
      */
 
-    console.log(users);
+    // console.log(users);
 
     return (
         <div>
