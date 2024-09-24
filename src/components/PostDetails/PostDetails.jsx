@@ -16,7 +16,7 @@ const PostDetails = () => {
     }
 
     const handleGoBack = () => {
-        navigate("/posts");
+        navigate(-1);
     }
 
     return (
